@@ -91,7 +91,7 @@ function Homepage() {
               </p>
               <div className="courses-container">
                 <div className="courses-box">
-                  <h1 className="courses">Courses</h1>
+                  <h1 className="courses">Programs</h1>
                 </div>
               </div>
               {noAllResults}

@@ -25,9 +25,9 @@ function AddCoursePopup() {
           .post(`${URL}/v1/courses/create_newCourse`, {
             courseTitle: coursetitleValue,
             courseInfo: courseinfoValue,
-            courseImage: 'http://127.0.0.1:5500/assets/images/10.png',
+            courseImage: 'http://127.0.0.1:5500/assets/images/3.jpg',
             courseDescription:
-              'In this track, you’ll build robust, scalable and secure backend APIs using the most sought after technologies in web development. You’ll learn to build highly reusable, maintainable and extensible applications. You’ll also architect the...',
+              'we strive for meaningful change. Through volunteering, we aim to build a society that empowers every individual to reshape the conversation with their voices and stories.',
           })
           .then(function(response) {
             if (response.statusText === 'Created' && response.status === 201) {
@@ -45,9 +45,9 @@ function AddCoursePopup() {
                 .post(
                   `${URL}/v1/contents/create_newContent/${response.data._id}`,
                   {
-                    classTitle: 'Introduction to Algorithms',
+                    classTitle: 'Introduction to Our NGO',
                     classDuration: '20min',
-                    classVideo: 'https://www.youtube.com/embed/rL8X2mlNHPM',
+                    classVideo: 'https://www.youtube.com/embed/FF38n2ATEg0',
                   },
                 )
                 .then(function(response2) {
